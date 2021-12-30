@@ -7,18 +7,36 @@
     <meta name="description" content="Starter Snowpack App" />
     <title>Experimental Gmail Exporter</title>
 
+    <!-- ionic -->
+    <script type="module" src="https://cdn.jsdelivr.net/npm/@ionic/core/dist/ionic/ionic.esm.js"></script>
+    <script nomodule src="https://cdn.jsdelivr.net/npm/@ionic/core/dist/ionic/ionic.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@ionic/core/css/ionic.bundle.css" />
+
+    <!-- custom scripts -->
     <script type="module" src="src/main.js"></script>
     <script type="text/javascript" src="src/gapi_event_handler.js"></script>
+    <link rel="stylesheet" href="src/main.css" />
 </head>
 
 <body>
-    <h1>Experimental Gmail Exporter</h1>
 
-    <!--Add buttons to initiate auth sequence and sign out-->
-    <button id="authorize_button" style="display: none;">Authorize</button>
-    <button id="signout_button" style="display: none;">Sign Out</button>
+    <ion-app>
+        <ion-header>
+            <ion-toolbar color="primary">
+                <ion-title>Experimental Gmail Exporter</ion-title>
+            </ion-toolbar>
+        </ion-header>
 
-    <pre id="content" style="white-space: pre-wrap;"></pre>
+        <ion-content class="ion-padding">
+            <!--Add buttons to initiate auth sequence and sign out-->
+            <button id="authorize_button" style="display: none;">Authorize</button>
+            <button id="signout_button" style="display: none;">Sign Out</button>
+
+            <pre id="content" style="white-space: pre-wrap;"></pre>
+        </ion-content>
+    </ion-app>
+
+
 
     <script id="google_api_client" async defer src="https://apis.google.com/js/api.js"
         onload="this.onload=()=>{};handleClientLoad()"
