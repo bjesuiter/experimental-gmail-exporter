@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/bjesuiter/experimental-gmail-exporter/issues"
   },
-  "homepage": "https://github.com/bjesuiter/experimental-gmail-exporter#readme"
+  "homepage": "https://github.com/bjesuiter/experimental-gmail-exporter#readme",
+  "devDependencies": {
+    "snowpack": "^3.8.8"
+  }
 }
