@@ -1,1 +1,1 @@
-console.log("Hello from main.js");
+console.debug(`main.js alive!`);

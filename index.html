@@ -8,10 +8,22 @@
     <title>Experimental Gmail Exporter</title>
 
     <script type="module" src="src/main.js"></script>
+    <script type="text/javascript" src="src/gapi_event_handler.js"></script>
 </head>
 
 <body>
     <h1>Experimental Gmail Exporter</h1>
+
+    <!--Add buttons to initiate auth sequence and sign out-->
+    <button id="authorize_button" style="display: none;">Authorize</button>
+    <button id="signout_button" style="display: none;">Sign Out</button>
+
+    <pre id="content" style="white-space: pre-wrap;"></pre>
+
+    <script id="google_api_client" async defer src="https://apis.google.com/js/api.js"
+        onload="this.onload=()=>{};handleClientLoad()"
+        onreadystatechange="if (this.readyState === 'complete') this.onload()">
+        </script>
 </body>
 
 </html>
