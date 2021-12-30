@@ -24,15 +24,37 @@
         <ion-header>
             <ion-toolbar color="primary">
                 <ion-title>Experimental Gmail Exporter</ion-title>
+                <ion-buttons slot="end">
+                    <ion-button id="signout_button" style="display: none;">
+                        <!--Button for logout sequence-->
+                        <ion-icon name="log-out-outline"></ion-icon>
+                    </ion-button>
+                </ion-buttons>
             </ion-toolbar>
         </ion-header>
 
-        <ion-content class="ion-padding">
-            <!--Add buttons to initiate auth sequence and sign out-->
-            <button id="authorize_button" style="display: none;">Authorize</button>
-            <button id="signout_button" style="display: none;">Sign Out</button>
+        <ion-content class="ion-padding" fullscreen>
+
+            <!--Button for authorization sequence-->
+            <ion-button id="authorize_button" style="display: none;">Authorize</ion-button>
+
+            <!-- Photo for login mask by <a href="https://unsplash.com/@rubaitulazad?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Rubaitul Azad</a> 
+                on <a href="https://unsplash.com/s/photos/gmail?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
+            -->
+
+            <!-- <ion-card id="login_card">
+                <img src="assets/login-banner.jpg">
+                <ion-card-header>
+                    <ion-card-title>Login</ion-card-title>
+                </ion-card-header>
+                <ion-card-content>
+
+                </ion-card-content>
+
+            </ion-card> -->
 
             <pre id="content" style="white-space: pre-wrap;"></pre>
+
         </ion-content>
     </ion-app>
 
