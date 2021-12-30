@@ -2,7 +2,7 @@ console.debug(`gapi_event_handler.js loaded!`);
 
 // Client ID and API key from the Developer Console
 const API_KEY = 'AIzaSyB2OMvsdT4YuyVWn1jR4dCfEG9k16kTzj0';
-const CLIENT_ID = '98254015530-qan55nhejpag0bdhed7q4nfpjj14ece8.apps.googleusercontent.com';
+const CLIENT_ID = '98254015530-mepdsdd392c34bl4tn342716f2p30spo.apps.googleusercontent.com';
 
 // Array of API discovery doc URLs for APIs used by the quickstart
 const DISCOVERY_DOCS = ['https://www.googleapis.com/discovery/v1/apis/gmail/v1/rest'];
