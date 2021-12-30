@@ -10,11 +10,7 @@ env_files = [".env"]
 [scripts]
     # This would be nice!!!
     # start.cwd = "playground"
-    start.cmd = [
-        "pushd playground",
-        "deno run --allow-net --unstable ../main.ts",
-        "popd",
-    ]
+    start.cmd = "npx snowpack dev"
 
     build = [
         "bonnie bundle",
