@@ -1,23 +1,23 @@
 {
-  "name": "experimental-gmail-exporter",
-  "version": "0.0.1",
-  "description": "An experimental website for exporting gmail emails for archival",
-  "main": " ",
-  "scripts": {
-    "start": "snowpack dev"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/bjesuiter/experimental-gmail-exporter.git"
-  },
-  "author": "Benjamin Jesuiter <bjesuiter@gmail.com>",
-  "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/bjesuiter/experimental-gmail-exporter/issues"
-  },
-  "homepage": "https://github.com/bjesuiter/experimental-gmail-exporter#readme",
-  "devDependencies": {
-    "prettier": "^2.5.1",
-    "snowpack": "^3.8.8"
-  }
+	"name": "experimental-gmail-exporter",
+	"version": "0.0.1",
+	"description": "An experimental website for exporting gmail emails for archival",
+	"main": " ",
+	"scripts": {
+		"start": "snowpack dev"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/bjesuiter/experimental-gmail-exporter.git"
+	},
+	"author": "Benjamin Jesuiter <bjesuiter@gmail.com>",
+	"license": "MIT",
+	"bugs": {
+		"url": "https://github.com/bjesuiter/experimental-gmail-exporter/issues"
+	},
+	"homepage": "https://github.com/bjesuiter/experimental-gmail-exporter#readme",
+	"devDependencies": {
+		"prettier": "^2.5.1",
+		"snowpack": "^3.8.8"
+	}
 }
