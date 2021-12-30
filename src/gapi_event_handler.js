@@ -11,8 +11,8 @@ const DISCOVERY_DOCS = ['https://www.googleapis.com/discovery/v1/apis/gmail/v1/r
 // included, separated by spaces.
 const SCOPES = 'https://www.googleapis.com/auth/gmail.readonly';
 
-const authorizeButton = document.getElementById('authorize_button');
-const signoutButton = document.getElementById('signout_button');
+let authorizeButton;
+let signoutButton;
 
 // const gapiScriptTag = document.getElementById(`google_api_client`);
 // if (!gapiScriptTag) throw new Error(`Script tag missing for google_api_client`);
@@ -26,8 +26,10 @@ const signoutButton = document.getElementById('signout_button');
  *  On load of the gapi client lib, called to load the auth2 library and API client library.
  */
 function handleClientLoad() {
-	console.debug(`handleCLientLoad was called`);
+	console.debug(`handleClientLoad was called`);
 	gapi.load('client:auth2', initClient);
+	authorizeButton = document.getElementById('authorize_button');
+	signoutButton = document.getElementById('signout_button');
 }
 
 /**
