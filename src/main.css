@@ -55,3 +55,7 @@
 	--ion-color-light-shade: #d7d8da;
 	--ion-color-light-tint: #f5f6f9;
 }
+
+#login_card {
+	max-width: 600px;
+}
