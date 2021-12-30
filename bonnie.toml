@@ -10,7 +10,8 @@ env_files = [".env"]
 [scripts]
     # This would be nice!!!
     # start.cwd = "playground"
-    start.cmd = "npx snowpack dev"
+    start.cmd  = "npx snowpack dev"
+    deploy.cmd = "surge ."
 
     build = [
         "bonnie bundle",
