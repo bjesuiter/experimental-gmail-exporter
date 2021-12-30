@@ -1,0 +1,10 @@
+dist
+src
+playground
+node_modules 
+wiki
+bonnie.toml
+.*
+package.json
+package-lock.json
+snowpack.config.js
