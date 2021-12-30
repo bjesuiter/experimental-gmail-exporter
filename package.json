@@ -4,7 +4,7 @@
   "description": "An experimental website for exporting gmail emails for archival",
   "main": " ",
   "scripts": {
-    "test": " "
+    "start": "snowpack dev"
   },
   "repository": {
     "type": "git",
