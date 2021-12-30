@@ -12,10 +12,16 @@ env_files = [".env"]
     # start.cwd = "playground"
     start.cmd = [
         "pushd playground",
-        "deno run --allow-read --allow-write --allow-net --unstable --allow-run ../main.ts",
+        "deno run --allow-net --unstable ../main.ts",
         "popd",
     ]
 
-    build   = ["bonnie bundle", "bonnie compile"]
-    bundle  = "deno bundle --unstable main.ts dist/portable-vscode-updater.js"
-    compile = "deno compile --unstable --target x86_64-pc-windows-msvc --allow-read --allow-write --allow-net --allow-run -o dist/portable-vscode-updater main.ts "
+    build = [
+        "bonnie bundle",
+        # "bonnie compile"
+    ]
+    bundle.cmd = "deno bundle --unstable main.ts dist/%APP_NAME.js"
+    bundle.env_vars = ["APP_NAME"]
+
+    # If needed, adjust and activate
+    # compile = "deno compile --unstable --target x86_64-pc-windows-msvc --allow-read --allow-write --allow-net --allow-run -o dist/%APP_NAME main.ts "
