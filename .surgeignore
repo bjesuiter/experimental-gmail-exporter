@@ -1,10 +1,15 @@
+# Ignored per default
+# .git
+# .*
+# *.*~
+# node_modules
+# bower_components
+
 dist
 src
 playground
-node_modules 
 wiki
 bonnie.toml
-.*
 package.json
 package-lock.json
 snowpack.config.js
