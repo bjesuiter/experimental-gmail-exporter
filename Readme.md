@@ -40,3 +40,8 @@ An experimental deno script to export emails from GMail
     2. Choose the scope for which to authenticate. 
        - For Testing: https://mail.google.com/
        - For Prod (guess): https://www.googleapis.com/auth/gmail.readonly and https://www.googleapis.com/auth/gmail.labels
+
+## Step Log - Switch to Snowpack 
+
+=> Switch from deno (cli app) to a snowpack html webapp, since having a browser client environment is easier in this case than a cli environment, becuase of existing exampels for nodejs & with an index.html, as well as easier OAuth Authentication flow.
+
