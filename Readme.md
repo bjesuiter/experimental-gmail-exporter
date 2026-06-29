@@ -2,6 +2,8 @@
 
 An experimental deno script to export emails from GMail
 
+> **Note:** This project is suuuper old and has to be set up again anyway. Ignore the existing `.env` for any Varlock migration.
+
 ## Folder Structure
 
 - `.vscode` = A folder, containing a `settings.json` which activates the deno language server for this workspace
